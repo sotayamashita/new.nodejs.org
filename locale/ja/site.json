@@ -8,8 +8,8 @@
     "reportWebsiteIssue": "サイトの不具合を報告",
     "getHelpIssue": "サポート",
     "by": "by",
-    "all-downloads": "All download options",
-    "nightly": "Nightly builds",
+    "all-downloads": "ダウンロード可能なすべてのソースコード",
+    "nightly": "最新開発版",
     "feeds": [
         {
             "link": "feed/blog.xml",
