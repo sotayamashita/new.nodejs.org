@@ -11,7 +11,7 @@
     "load-versions": "node scripts/load-versions.js",
     "start": "npm run serve",
     "test": "npm run test:lint && npm run test:unit && npm run test:smoke",
-    "test:lint": "standard && htmllint **/*.hbs && stylint layouts/css",
+    "test:lint": "standard && htmllint **/*.hbs && stylint layouts/css && textlint locale/ja/**/*.md",
     "test:unit": "tape tests/**/*.test.js | faucet",
     "test:smoke": "tape tests/*.smoketest.js | faucet",
     "test:snyk": "snyk test",
@@ -75,7 +75,10 @@
     "proxyquire": "^1.7.4",
     "standard": "^8.0.0",
     "stylint": "^1.3.8",
-    "tape": "^4.5.1"
+    "tape": "^4.5.1",
+    "textlint": "^7.1.2",
+    "textlint-rule-max-ten": "^2.0.1",
+    "textlint-rule-spellcheck-tech-word": "^5.0.0"
   },
   "snyk": true
 }
