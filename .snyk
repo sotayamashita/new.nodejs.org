@@ -1,5 +1,7 @@
-version: v1.5.2
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.8.0
 ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:marked:20150520':
     - marked:
@@ -34,3 +36,8 @@ patch:
   'npm:tough-cookie:20160722':
     - chokidar > fsevents > node-pre-gyp > request > tough-cookie:
         patched: '2016-07-26T18:26:02.202Z'
+  'npm:marked:20170907':
+    - marked:
+        patched: '2017-11-02T22:16:12.497Z'
+    - metalsmith-markdown > marked:
+        patched: '2017-11-02T22:16:12.497Z'
